@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortiner Night</title>
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers ton fichier CSS -->
+</head>
+<body>
+    <div class="mortiner-container">
+        <h1>Mortiner Night</h1>
+        <button id="commencer-btn">Commencer</button> <!-- Bouton pour commencer -->
+        <button id="hellsight-btn" onclick="window.location.href='https://hell-sight-ktlc.vercel.app/'">Jouer à Hell Sight</button> <!-- Bouton pour Hell Sight -->
+    </div>
+
+<center><img src="https://i.postimg.cc/s27vkpqZ/Design-sans-titre.gif">
+
+   <!-- Balise audio pour jouer la musique d'accueil -->
+    <audio id="musiqueAccueil" loop>
+        <source src="musique_acueuil.mp3" type="audio/mp3"> <!-- Ton fichier audio local -->
+        Votre navigateur ne supporte pas la balise audio.
+    </audio>
+	
+
+
+    <script>
+        // Fonction pour démarrer la musique et autres actions dès le clic sur le bouton "Commencer"
+        document.querySelector('#commencer-btn').addEventListener('click', function(event) {
+            event.preventDefault();
+            var musique = document.getElementById('musiqueAccueil');
+            musique.play(); // Démarre la musique au clic du bouton
+            alert('!error👁️👁️!'); // Affiche un message
+        });
+    </script>
+</body>
+</html>
